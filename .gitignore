@@ -1,0 +1,14 @@
+*.iml
+.idea
+
+**/__pycache__
+*.pyc
+*.pyo
+
+*.yaml
+!nn/neural_network/config_files/*/*
+
+*/*/prediction_log.txt
+*/*/train_log.txt
+*/*/answer.txt
+*/*/sandbox.*

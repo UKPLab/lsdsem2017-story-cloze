@@ -1,0 +1,68 @@
+logger:
+  level: DEBUG
+
+  # (optional) log file path
+  path:
+
+data-module: neural_network.cloze_stories.data.csv_reader-v
+model-module: neural_network.cloze_stories.model.bilstm
+training-module: neural_network.cloze_stories.train.features
+evaluation-module:
+
+global:
+  # (optional) the directory that is used for tensorboard summaries
+  # tensorflow_log_dir:
+
+  # maximum length of each sentence
+  sentence_length: 20
+
+  # size of the word embeddings
+  embedding_size: 100
+
+  mode: train
+  # folder to store the model files
+  checkpoint_dir:
+
+data:
+  # lowercased=true will lowercase all tokens when the dataset is loaded. This might be required when you use embeddings
+  # that are uncased
+  lowercased: true
+
+  # (optional) path of the embeddings file. Can be glove or w2v (text)
+  # embeddings are in the text format:
+  # the -0.038194 -0.24487 0.72812 -0.39961 0.083172 0.043953 -0.39141 ...
+  embeddings_path:
+
+  # The following configuration options must be set to the paths of the corresponding CSV files
+  train_stories_csv:
+  valid_csv:
+  test_csv:
+
+  # how much of the training data (ROCStories) to use for the training procedure
+  train_split_size: 0.0
+
+  # how much of the Story Cloze validation data to use for development/test
+  val_split_size: 0.85
+
+model:
+  # true if word embeddings should be updated during training
+  trainable_embeddings: true
+
+  # size of the lstm
+  lstm_cell_size: 141
+
+  # true = use the last hidden lstm state, false = use all hidden states and max-pool
+  use_last_hidden: true
+
+training:
+  epochs: 30
+  batchsize: 40
+
+  # sgd/adam/adadelta
+  optimizer: adam
+  initial_learning_rate: 0.0001
+  dropout: 0.3
+
+  # If set to true, the training process will use an adaptive learning rate that decreases over time
+  dynamic_learning_rate: false
+
