@@ -1,7 +1,10 @@
 -------------------------------------------------------------------------------
-* The software and processed data are licensed under CC-BY SA 3.0.
+* The software and processed data are licensed under CC-BY 4.0.
+License details: http://creativecommons.org/licenses/by/4.0
+
 * Please cite the LSDSem 2017 system description article if you use the software
 or generated data in any of your work.
+
 * The original ROCStories and Story Cloze Test data keep the original license
 (see http://cs.rochester.edu/nlp/rocstories/)
 -------------------------------------------------------------------------------
