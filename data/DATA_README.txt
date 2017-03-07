@@ -51,9 +51,11 @@ https://github.com/UKPLab/lsdsem2017-story-cloze
 ------------------------------------------------------------------
  License
 ------------------------------------------------------------------
+* The data are licensed under CC-BY 4.0.
+License details: http://creativecommons.org/licenses/by/4.0
 
-* The data are licensed under CC-BY SA 3.0.
-* Please cite the LSDSem 2017 system description article if you use the data in any
-  of your work.
+* Please cite the LSDSem 2017 system description article if you use the data 
+in any of your work.
+
 * The original ROCStories and Story Cloze Test data keep the original license
 (see http://cs.rochester.edu/nlp/rocstories/)
