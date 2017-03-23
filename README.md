@@ -154,10 +154,6 @@ Running ```$python shuffling.py <src> <dest>``` with a ROCStories CSV file as `<
 * Run the data generation via:
     ```$python3 run.py <dest_csv> <config.yaml>```
 * The output file `<dest_csv>` will be a CSV file in the format of the Story Cloze validation/test sets, containing ROCStories with generated wrong endings.
-  
-# TODO:
-  - update the citation when the paper is published
-  - push to github and created a news item
  
 
 [//]: # (Reference links. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
