@@ -15,8 +15,8 @@ Please cite the paper as:
   year      = {2017},
   address   = {Valencia, Spain},
   publisher = {Association for Computational Linguistics},
-  pages     = {(to appear)},
-  url       = {TBA}
+  pages     = {56-61},
+  url       = {https://aclweb.org/anthology/W/W17/W17-0908.pdf}
 }
 ```
 
